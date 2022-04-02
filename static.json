@@ -4,5 +4,10 @@
   "clean_urls": true,
   "routes": {
     "/*.html": "index.html"
- }
+ },
+  "headers": {
+    "/**": {
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
 }
