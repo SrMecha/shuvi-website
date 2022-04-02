@@ -1,4 +1,8 @@
 {
+  "error-page": "error.html",
   "encoding": "US-ASCII",
-  "clean_urls": true
+  "clean_urls": true,
+  "routes": {
+    "/*.html": "index.html"
+ }
 }
