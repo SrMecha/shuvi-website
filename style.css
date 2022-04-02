@@ -1,13 +1,77 @@
-body{
-   background-color: lightblue;
+* { padding: 0; margin: 0; }
+body { background: #1abc9c; font-family: 'Lato', sans-serif; letter-spacing: 1px;}
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none;
+  color: #ffe700;
+  font-weight: 100;
+}
+.shuvi-name{
+  color: d71868;
+}
+.center-text{
+  text-align: center;
+}
+header {
+    text-align: justify;
+    height: 20em;
+    padding: 2em 5%;
+    background-image: url(img/header-background.png);
+    background-position: 100% 50%;
+    color: #fff;
 }
 
-h1{
-   color: white;
-   text-align: center;
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
 }
 
-p{
-   font-family: verdana;
-   font-size: 20px;
+header > div,
+header > div::before,
+header nav,
+header > div h1 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+header > div {
+    height: 100%;
+}
+
+header > div::before {
+    content: '';
+    height: 100%;
+}
+
+header > div h1 {
+    font-size: 3em;
+}
+
+header nav a {
+    padding: 0 0.6em;
+    white-space: nowrap;
+}
+
+header nav a:last-child {
+    padding-right: 0;
+}
+
+@media screen and (max-width: 720px){
+
+    header {
+        height: auto;
+    }
+
+    header > div,
+    header > div h1,
+    header nav {
+        height: auto;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+
 }
