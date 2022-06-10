@@ -1,77 +1,103 @@
-* { padding: 0; margin: 0; }
-body { background: #1abc9c; font-family: 'Lato', sans-serif; letter-spacing: 1px;}
-a.text:active, /* активная/посещенная ссылка */
-a.text:hover,  /* при наведении */
-a.text {
-  text-decoration: none;
-  color: #ffe700;
-  font-weight: 100;
-}
-.shuvi-name{
-  color: d71868;
-}
-.center-text{
-  text-align: center;
-}
-header {
-    text-align: justify;
-    height: 20em;
-    padding: 2em 5%;
-    background-image: url(img/header-background.png);
-    background-position: 100% 50%;
-    color: #fff;
-}
-
-header::after {
-    content: '';
-    display: inline-block;
+* { box-sizing: border-box; font-family: 'Yanone Kaffeesatz', sans-serif; padding: 0; margin: 0; }
+.intro {
+    background-image: url(img/up-bg.jpg);
+    background-size: cover;
+    background-position: top right;
+    background-attachment: fixed;
     width: 100%;
+    height: 100%;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: top right;
+    background-attachment: fixed;
+    background: linear-gradient(to bottom,transparent 0,rgba(0,0,0,.75) 100%);
+    z-index: 5;
+}
+.title {
+    width: 70%;
+    font-size: 48px;
+    line-height: 128px;
+    margin: 0;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 40%);
+}
+.title h1 {
+    font-size: 128px;
+    line-height: 40px;
 }
 
-header > div,
-header > div::before,
-header nav,
-header > div h1 {
+@media (max-width: 700px)
+.main .title .btn-container {
+    margin: 90px 60px;
+}
+
+.btn {
     display: inline-block;
+    font-size: 64px;
+    border-radius: 1000px;
+    padding: 35px 50px;
+    background: #e66;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 25%), inset 0 -4px 0 rgb(0 0 0 / 20%);
+    text-shadow: none;
+    font-weight: 500;
+    margin: 10px;
+    transition: all linear .1s;
+}
+
+.btn.discord {
+    background: #7289da;
+    font-size: 32px;
+    margin-right: 10px;
+    vertical-align: sub;
+    align-content: center;
+}
+.btn.invite {
+    background: #7289da;
+    font-size: 32px;
+    margin-right: 10px;
+    vertical-align: sub;
+    align-content: center;
+}
+.section {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 10px;
+    background: #fff;
+    color: #404040;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    border-bottom: solid 2px #ddd;
+}
+.sec-cont-left {
+    width: 50%;
+    max-width: 512px;
+}
+.sec-cont-right {
+    display: inline-block;
+    z-index: 10;
+    padding: 50px 0;
+    margin: 0 10px;
+}
+img {
+    border-style: none;
     vertical-align: middle;
-    text-align: left;
-}
-
-header > div {
-    height: 100%;
-}
-
-header > div::before {
-    content: '';
-    height: 100%;
-}
-
-header > div h1 {
-    font-size: 3em;
-}
-
-header nav a {
-    padding: 0 0.6em;
-    white-space: nowrap;
-}
-
-header nav a:last-child {
-    padding-right: 0;
-}
-
-@media screen and (max-width: 720px){
-
-    header {
-        height: auto;
-    }
-
-    header > div,
-    header > div h1,
-    header nav {
-        height: auto;
-        width: auto;
-        display: block;
-        text-align: center;
-    }
-
 }
