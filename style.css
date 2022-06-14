@@ -1,8 +1,16 @@
 * { box-sizing: border-box; font-family: 'Yanone Kaffeesatz', sans-serif; padding: 0; margin: 0; }
 .intro {
-    background-image: url(img/up-bg.jpg);
+    background-image: url("https://github.com/SrMecha/shuvi-website/blob/main/img/up-bg.jpg?raw=true");
     background-size: cover;
-    background-position: top right;
+    background-position: top center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+.outro {
+    background-image: url("https://i.imgur.com/KueRLwu.png");
+    background-size: cover;
+    background-position: top center;
     background-attachment: fixed;
     width: 100%;
     height: 100%;
@@ -16,8 +24,10 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
+}
+.shadow {
     background-size: cover;
-    background-position: top right;
+    background-position: top center;
     background-attachment: fixed;
     background: linear-gradient(to bottom,transparent 0,rgba(0,0,0,.75) 100%);
     z-index: 5;
@@ -34,12 +44,20 @@
 }
 .title h1 {
     font-size: 128px;
-    line-height: 40px;
+    line-height: 60px;
 }
 
 @media (max-width: 700px)
 .main .title .btn-container {
     margin: 90px 60px;
+}
+.git-link {
+    text-align: right;
+    font-size: 48px;
+}
+.git-link a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .btn {
@@ -88,15 +106,14 @@
     min-height: 500px;
     border-bottom: solid 2px #ddd;
 }
-.sec-cont-left {
-    width: 50%;
-    max-width: 512px;
-}
-.sec-cont-right {
+.sec-txt {
+    text-align: center;
     display: inline-block;
     z-index: 10;
-    padding: 50px 0;
-    margin: 0 10px;
+    padding: 50px 0px;
+    margin: 0px 10px;
+         width: 50%;
+    max-width: 512px;
 }
 img {
     border-style: none;
