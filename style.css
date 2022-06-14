@@ -1,6 +1,6 @@
 * { box-sizing: border-box; font-family: 'Yanone Kaffeesatz', sans-serif; padding: 0; margin: 0; }
 .intro {
-    background-image: url("https://github.com/SrMecha/shuvi-website/blob/main/img/up-bg.jpg?raw=true");
+    background-image: url("img/up-bg.jpg");
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
@@ -8,7 +8,7 @@
     height: 100%;
 }
 .outro {
-    background-image: url("https://i.imgur.com/KueRLwu.png");
+    background-image: url("img/down-bg.png");
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
@@ -35,7 +35,7 @@
 .title {
     width: 70%;
     font-size: 48px;
-    line-height: 128px;
+    line-height: 64px;
     margin: 0;
     font-weight: 600;
     color: #fff;
@@ -44,7 +44,7 @@
 }
 .title h1 {
     font-size: 128px;
-    line-height: 60px;
+    line-height: 128px;
 }
 
 @media (max-width: 700px)
@@ -75,21 +75,6 @@
     margin: 10px;
     transition: all linear .1s;
 }
-
-.btn.discord {
-    background: #7289da;
-    font-size: 32px;
-    margin-right: 10px;
-    vertical-align: sub;
-    align-content: center;
-}
-.btn.invite {
-    background: #7289da;
-    font-size: 32px;
-    margin-right: 10px;
-    vertical-align: sub;
-    align-content: center;
-}
 .section {
     width: 100%;
     overflow: hidden;
@@ -112,10 +97,14 @@
     z-index: 10;
     padding: 50px 0px;
     margin: 0px 10px;
-         width: 50%;
+    width: 50%;
     max-width: 512px;
 }
 img {
     border-style: none;
     vertical-align: middle;
+    height: 70px;
+    margin: 10px;
+    opacity: .6;
+    transition: .1s all linear;
 }
